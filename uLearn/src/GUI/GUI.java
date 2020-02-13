@@ -16,12 +16,17 @@ public class GUI {
 
     public JPanel Main_Panel;
     private JTabbedPane tabMenu;
-    private JEditorPane thisIsTheHomeEditorPane;
     private JPanel homeTab;
     private JPanel chatTab;
     private JPanel calenderTab;
     private JPanel storageTab;
     private JPanel settingsTab;
+    private JEditorPane Notifications;
+    private JPanel classesTab;
+    private JTabbedPane tabbedPane1;
+    private JPanel notificationPanel;
+    private JEditorPane textAreaForDueEditorPane;
+    private JEditorPane textAreaForClassEditorPane;
 
 
     public GUI() {
@@ -55,6 +60,7 @@ public class GUI {
         Master_Window.add(child);
         Master_Window.repaint();
         Master_Window.revalidate();
+        Master_Window.setSize(600,600);
     }
 
     public Boolean verifyUser(String username, String password) {
