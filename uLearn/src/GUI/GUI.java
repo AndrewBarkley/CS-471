@@ -46,7 +46,8 @@ public class GUI {
         Master_Window.setFont(new Font("Droid Sans", PLAIN, 20));
 
         signInButton.addActionListener(new ActionListener() {
-            @Override public void actionPerformed(ActionEvent e) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 // Will eventually use getPassword() to improve security
                 Boolean certified = verifyUser(usernameField.getText(), passwordField.getText());
                 if (certified) {
@@ -99,9 +100,7 @@ public class GUI {
         Master_Window = new JPanel();
         Master_Window.setLayout(new CardLayout(0, 0));
         Master_Window.setEnabled(true);
-        Master_Window.setBorder(BorderFactory
-                .createTitledBorder(BorderFactory.createLineBorder(Color.black), null, TitledBorder.CENTER,
-                        TitledBorder.TOP, this.$$$getFont$$$("Droid Sans", Font.PLAIN, -1, Master_Window.getFont())));
+        Master_Window.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black), null, TitledBorder.CENTER, TitledBorder.TOP, this.$$$getFont$$$("Droid Sans", Font.PLAIN, -1, Master_Window.getFont())));
         Login_Panel = new JPanel();
         Login_Panel.setLayout(new GridBagLayout());
         Login_Panel.setOpaque(true);
@@ -188,45 +187,34 @@ public class GUI {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         Login_Panel.add(spacer2, gbc);
         Main_Panel = new JPanel();
-        Main_Panel.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
+        Main_Panel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
         Master_Window.add(Main_Panel, "Card2");
         tabMenu = new JTabbedPane();
         tabMenu.setTabLayoutPolicy(1);
-        Main_Panel.add(tabMenu,
-                new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
-                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_WANT_GROW,
-                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_WANT_GROW,
-                        new Dimension(100, 100), new Dimension(400, 250), new Dimension(1000, 1000), 0, false));
+        Main_Panel.add(tabMenu, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, new Dimension(100, 100), new Dimension(400, 250), new Dimension(1000, 1000), 0, false));
         homeTab = new JPanel();
-        homeTab.setLayout(new GridLayoutManager(2, 2, new Insets(0, 0, 0, 0), -1, -1));
+        homeTab.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(2, 2, new Insets(0, 0, 0, 0), -1, -1));
         tabMenu.addTab("Home", homeTab);
         thisIsTheHomeEditorPane = new JEditorPane();
         thisIsTheHomeEditorPane.setEditable(true);
         thisIsTheHomeEditorPane.setOpaque(false);
         thisIsTheHomeEditorPane.setText("This is the Home Page");
-        homeTab.add(thisIsTheHomeEditorPane,
-                new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
-                        GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null,
-                        new Dimension(150, 50), null, 0, false));
-        final Spacer spacer3 = new Spacer();
-        homeTab.add(spacer3,
-                new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL,
-                        GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
-        final Spacer spacer4 = new Spacer();
-        homeTab.add(spacer4,
-                new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1,
-                        GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        homeTab.add(thisIsTheHomeEditorPane, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
+        final com.intellij.uiDesigner.core.Spacer spacer3 = new com.intellij.uiDesigner.core.Spacer();
+        homeTab.add(spacer3, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
+        final com.intellij.uiDesigner.core.Spacer spacer4 = new com.intellij.uiDesigner.core.Spacer();
+        homeTab.add(spacer4, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         chatTab = new JPanel();
-        chatTab.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
+        chatTab.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
         tabMenu.addTab("Chat", chatTab);
         calenderTab = new JPanel();
-        calenderTab.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
+        calenderTab.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
         tabMenu.addTab("Calender", calenderTab);
         storageTab = new JPanel();
-        storageTab.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
+        storageTab.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
         tabMenu.addTab("Storage", storageTab);
         settingsTab = new JPanel();
-        settingsTab.setLayout(new GridLayoutManager(2, 1, new Insets(0, 0, 0, 0), -1, -1));
+        settingsTab.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(2, 1, new Insets(0, 0, 0, 0), -1, -1));
         settingsTab.setForeground(new Color(-4473925));
         settingsTab.setOpaque(true);
         tabMenu.addTab("Settings", settingsTab);
@@ -239,15 +227,9 @@ public class GUI {
         userSettingsTextPane.setForeground(new Color(-15847821));
         userSettingsTextPane.setOpaque(false);
         userSettingsTextPane.setText("User Settings");
-        settingsTab.add(userSettingsTextPane,
-                new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_NORTH, GridConstraints.FILL_HORIZONTAL,
-                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_WANT_GROW,
-                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_WANT_GROW, null,
-                        new Dimension(150, 50), null, 0, false));
-        final Spacer spacer5 = new Spacer();
-        settingsTab.add(spacer5,
-                new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL, 1,
-                        GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        settingsTab.add(userSettingsTextPane, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_NORTH, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
+        final com.intellij.uiDesigner.core.Spacer spacer5 = new com.intellij.uiDesigner.core.Spacer();
+        settingsTab.add(spacer5, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
     }
 
     /**
@@ -256,19 +238,24 @@ public class GUI {
     private Font $$$getFont$$$(String fontName, int style, int size, Font currentFont) {
         if (currentFont == null) return null;
         String resultName;
-        if (fontName == null) {resultName = currentFont.getName();} else {
+        if (fontName == null) {
+            resultName = currentFont.getName();
+        } else {
             Font testFont = new Font(fontName, Font.PLAIN, 10);
-            if (testFont.canDisplay('a') && testFont.canDisplay('1')) {resultName = fontName;} else {
+            if (testFont.canDisplay('a') && testFont.canDisplay('1')) {
+                resultName = fontName;
+            } else {
                 resultName = currentFont.getName();
             }
         }
-        return new Font(resultName, style >= 0 ? style : currentFont.getStyle(),
-                size >= 0 ? size : currentFont.getSize());
+        return new Font(resultName, style >= 0 ? style : currentFont.getStyle(), size >= 0 ? size : currentFont.getSize());
     }
 
     /**
      * @noinspection ALL
      */
-    public JComponent $$$getRootComponent$$$() { return Master_Window; }
+    public JComponent $$$getRootComponent$$$() {
+        return Master_Window;
+    }
 
 }
