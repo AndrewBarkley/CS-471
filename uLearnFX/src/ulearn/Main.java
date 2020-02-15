@@ -34,7 +34,7 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.setResizable(true);
         primaryStage.show();
-
+        System.setProperty("sun.net.http.allowRestrictedHeaders", "true");
 
     }
 
