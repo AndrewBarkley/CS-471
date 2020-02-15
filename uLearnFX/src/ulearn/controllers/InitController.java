@@ -16,7 +16,7 @@ import java.io.IOException;
 
 import static javafx.fxml.FXMLLoader.load;
 
-public class Controller {
+public class InitController {
     // for login
     public Button loginBtn = new Button();
     public Label unameLabel = new Label(), pwdLabel = new Label();
@@ -51,7 +51,6 @@ public class Controller {
         stage.setResizable(true);
         stage.show();
         resize(stage);
-
     }
 
     void resize(Stage stage) {

@@ -14,11 +14,14 @@ public class MainController {
 
     // calendar
     public WebView gCalWV = new WebView();
+    public WebView driveWView = new WebView();
 
     @FXML
     void tabEvents(Event ev) {
         if (calTab.isSelected()) {
             gCalendar();
+        } else if (storageTab.isSelected()) {
+            gDrive();
         }
     }
 
@@ -27,6 +30,12 @@ public class MainController {
         wEngine.load("https://calendar.google.com");
         gCalWV.setZoom(0.8);
 
+    }
+
+    void gDrive() {
+        WebEngine we = driveWView.getEngine();
+        we.load("https://drive.google.com/drive");
+        driveWView.setZoom(0.8);
     }
 
 }
