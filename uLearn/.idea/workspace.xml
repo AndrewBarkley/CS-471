@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ea063f3d-0fe6-4b7c-b913-fb8ace2e0a4d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="XML Properties File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XoHRNrgcTP84xcwQCzs3tdsGX0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="ToolWindow" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="353" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="538" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/jgoodies-forms-1.6.0.jar!/" />
+    <property name="nodejs.jest.jest_package" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="uLearn" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="uLearn" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Java Scratch">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <module name="uLearn" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea063f3d-0fe6-4b7c-b913-fb8ace2e0a4d" name="Default Changelist" comment="" />
+      <created>1581705517717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581705517717</updated>
+      <workItem from="1581705519074" duration="252000" />
+      <workItem from="1581706910683" duration="4109000" />
+      <workItem from="1581776645859" duration="111000" />
+      <workItem from="1581776773462" duration="2629000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="179" key="#Project_Structure" timestamp="1581707691258">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1581707691258" />
+    <state x="552" y="179" key="#Scopes" timestamp="1581707765951">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1581707765951" />
+    <state x="740" y="186" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog_Form" timestamp="1581708868169">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="186" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog_Form/0.0.1920.1040@0.0.1920.1040" timestamp="1581708868169" />
+    <state x="201" y="222" width="1276" height="811" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581708532411">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="201" y="222" width="1276" height="811" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581708532411" />
+    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1581705717821">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581705717821" />
+    <state x="809" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581705602548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="809" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581705602548" />
+    <state x="811" y="300" width="768" height="576" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1581708176635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="811" y="300" width="768" height="576" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581708176635" />
+    <state x="834" y="409" key="#com.intellij.uiDesigner.palette.ComponentItemDialog.OneOff" timestamp="1581710223433">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="834" y="409" key="#com.intellij.uiDesigner.palette.ComponentItemDialog.OneOff/0.0.1920.1040@0.0.1920.1040" timestamp="1581710223433" />
+    <state x="625" y="237" key="FileChooserDialogImpl" timestamp="1581709676858">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="625" y="237" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581709676858" />
+    <state width="1879" height="195" key="GridCell.Tab.0.bottom" timestamp="1581779056927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581779056927" />
+    <state width="1879" height="195" key="GridCell.Tab.0.center" timestamp="1581779056927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="195" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581779056927" />
+    <state width="1879" height="195" key="GridCell.Tab.0.left" timestamp="1581779056926">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="195" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581779056926" />
+    <state width="1879" height="195" key="GridCell.Tab.0.right" timestamp="1581779056927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="195" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581779056927" />
+    <state width="1879" height="348" key="GridCell.Tab.1.bottom" timestamp="1581778382726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581778382726" />
+    <state width="1879" height="348" key="GridCell.Tab.1.center" timestamp="1581778382726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581778382726" />
+    <state width="1879" height="348" key="GridCell.Tab.1.left" timestamp="1581778382726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581778382726" />
+    <state width="1879" height="348" key="GridCell.Tab.1.right" timestamp="1581778382726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581778382726" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1581777156574">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581777156574" />
+    <state x="834" y="316" key="UIDesigner.ListEditorDialog" timestamp="1581778727901">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="834" y="316" key="UIDesigner.ListEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581778727901" />
+    <state x="729" y="402" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog" timestamp="1581778749062">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="729" y="402" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581778749062" />
+    <state x="383" y="246" key="new project wizard" timestamp="1581707167148">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="383" y="246" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1581707167148" />
+  </component>
+</project>
