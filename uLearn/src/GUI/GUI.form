@@ -127,10 +127,11 @@
             </constraints>
             <properties>
               <tabLayoutPolicy value="1"/>
+              <tabPlacement value="2"/>
             </properties>
             <border type="none"/>
             <children>
-              <grid id="e6fc9" binding="homeTab" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="e6fc9" binding="homeTab" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <tabbedpane title="Home"/>
@@ -138,28 +139,39 @@
                 <properties/>
                 <border type="none"/>
                 <children>
-                  <component id="1242a" class="javax.swing.JEditorPane" binding="thisIsTheHomeEditorPane" default-binding="true">
+                  <component id="1242a" class="javax.swing.JEditorPane" binding="welcomeBackYourClassesEditorPane" default-binding="true">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="50"/>
                       </grid>
                     </constraints>
                     <properties>
                       <editable value="true"/>
                       <opaque value="false"/>
-                      <text value="This is the Home Page"/>
+                      <text value="Welcome back!&#10;Your Classes:"/>
                     </properties>
                   </component>
                   <hspacer id="daebf">
                     <constraints>
-                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                   </hspacer>
-                  <vspacer id="a20d">
+                  <component id="9958f" class="javax.swing.JList" binding="list1" default-binding="true">
                     <constraints>
-                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
                     </constraints>
-                  </vspacer>
+                    <properties>
+                      <model>
+                        <item value="ENG-101"/>
+                        <item value="CS-101"/>
+                        <item value="MATH-101"/>
+                        <item value="BIOL-101"/>
+                      </model>
+                      <opaque value="false"/>
+                    </properties>
+                  </component>
                 </children>
               </grid>
               <grid id="7c724" binding="chatTab" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -223,12 +235,68 @@
                   </vspacer>
                 </children>
               </grid>
+              <tabbedpane id="e1f9" binding="classTab">
+                <constraints>
+                  <tabbedpane title="Classes"/>
+                </constraints>
+                <properties>
+                  <tabPlacement value="2"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="a797a" binding="classOne">
+                    <constraints>
+                      <tabbedpane title="ENG-101"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children/>
+                  </scrollpane>
+                  <scrollpane id="32305" binding="classTwo">
+                    <constraints>
+                      <tabbedpane title="CS-101"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children/>
+                  </scrollpane>
+                  <scrollpane id="610a6" binding="classThree">
+                    <constraints>
+                      <tabbedpane title="MATH-101"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children/>
+                  </scrollpane>
+                  <scrollpane id="85895" binding="classFour">
+                    <constraints>
+                      <tabbedpane title="BIOL-101"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children/>
+                  </scrollpane>
+                </children>
+              </tabbedpane>
+              <scrollpane id="ff730" binding="userTypeTab">
+                <constraints>
+                  <tabbedpane title="I am a..."/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </scrollpane>
             </children>
           </tabbedpane>
         </children>
       </grid>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="ae2b"/>
+    </group>
+  </buttonGroups>
   <inspectionSuppressions>
     <suppress inspection="NoLabelFor" id="f193c"/>
   </inspectionSuppressions>

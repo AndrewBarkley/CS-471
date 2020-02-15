@@ -24,13 +24,20 @@ public class GUI {
 
     public JPanel Main_Panel;
     private JTabbedPane tabMenu;
-    private JEditorPane thisIsTheHomeEditorPane;
+    private JEditorPane welcomeBackYourClassesEditorPane;
     private JPanel homeTab;
     private JPanel chatTab;
     private JPanel calenderTab;
     private JPanel storageTab;
     private JPanel settingsTab;
     private JTextPane userSettingsTextPane;
+    private JTabbedPane classTab;
+    private JScrollPane classOne;
+    private JScrollPane classTwo;
+    private JScrollPane classThree;
+    private JScrollPane classFour;
+    private JScrollPane userTypeTab;
+    private JList list1;
 
 
     public GUI() {
