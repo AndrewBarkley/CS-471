@@ -3,11 +3,13 @@ package ulearn.controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebView;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -33,7 +35,9 @@ public class Controller {
         Parent root = FXMLLoader.load(getClass().getResource("../layout/login_popup.fxml"));
         Stage stage = (Stage) loginBtn.getScene().getWindow();
         stage.setScene(new Scene(root, 300, 140));
+        stage.setResizable(false);
         stage.show();
+        resize(stage);
     }
 
     @FXML
@@ -41,10 +45,20 @@ public class Controller {
         event.consume();
         Parent root = FXMLLoader.load(getClass().getResource("../layout/main_screen.fxml"));
         Stage stage = (Stage) goHomeBtn.getScene().getWindow();
-        stage.setScene(new Scene(root, 600, 350));
+        Scene scene = new Scene(root, 600, 350);
+        scene.setFill(null);
+        stage.setScene(scene);
+        stage.setResizable(true);
         stage.show();
+        resize(stage);
+
     }
 
+    void resize(Stage stage) {
+        Rectangle2D primScreenBounds = Screen.getPrimary().getVisualBounds();
+        stage.setX((primScreenBounds.getWidth() - stage.getWidth()) / 2);
+        stage.setY((primScreenBounds.getHeight() - stage.getHeight()) / 4);
+    }
 
 
 }

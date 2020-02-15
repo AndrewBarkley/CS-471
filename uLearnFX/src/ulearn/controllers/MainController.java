@@ -1,22 +1,32 @@
 package ulearn.controllers;
 
-import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
 public class MainController {
-    public WebView gCalWebView;
-    public Tab chatTab;
-    public Tab classTab;
+    // main tabs
     public TabPane mainTabs;
-    public Tab calTab;
-    public Tab storageTab;
-    public Tab settingsTab;
+    public Tab chatTab = new Tab(), classTab = new Tab(), calTab = new Tab(), storageTab = new Tab(), settingsTab = new Tab();
+
+    // calendar
+    public WebView gCalWV = new WebView();
 
     @FXML
-    private void loadGCalendar(ActionEvent ae) {
+    void tabEvents(Event ev) {
+        if (calTab.isSelected()) {
+            gCalendar();
+        }
+    }
+
+    void gCalendar() {
+        WebEngine wEngine = gCalWV.getEngine();
+        wEngine.load("https://calendar.google.com");
+        gCalWV.setZoom(0.8);
 
     }
+
 }
