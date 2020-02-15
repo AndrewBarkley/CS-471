@@ -67,6 +67,9 @@
                 </Accordion>
             </AnchorPane>
         </Tab>
+        <Tab text="Grades &amp; Attendance">
+            <AnchorPane/>
+        </Tab>
         <Tab fx:id="chatTab" text="Chat">
             <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0"
                     prefWidth="200.0">
@@ -111,6 +114,9 @@
                         AnchorPane.topAnchor="0.0"/>
             </AnchorPane>
         </Tab>
+        <Tab text="Tools">
+            <AnchorPane/>
+        </Tab>
         <Tab fx:id="settingsTab" text="Settings">
             <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0"
                     prefWidth="200.0">
@@ -132,6 +138,7 @@
                 </VBox>
             </AnchorPane>
         </Tab>
+
 
     </TabPane>
 </AnchorPane>
