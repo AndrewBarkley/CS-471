@@ -52,16 +52,30 @@
             <fx:include source="chat_teacher.fxml"/>
         </Tab>
         <Tab fx:id="calTab" closable="false" onSelectionChanged="#tabEvents" text="Calendar">
-            <fx:include source="calendar.fxml"/>
+            <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                        AnchorPane.topAnchor="0.0" maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0"
+                        minWidth="0.0"
+                        prefHeight="180.0"
+                        prefWidth="200.0">
+                <WebView fx:id="gCalWV" prefHeight="342.0" prefWidth="600.0"
+                         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                         AnchorPane.topAnchor="0.0"/>
+            </AnchorPane>
         </Tab>
         <Tab fx:id="storageTab" closable="false" onSelectionChanged="#tabEvents" text="Storage">
-            <fx:include source="storage.fxml"/>
+            <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                        AnchorPane.topAnchor="0.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                        prefWidth="200.0">
+                <WebView fx:id="driveWView" layoutX="151.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0"
+                         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                         AnchorPane.topAnchor="0.0"/>
+            </AnchorPane>
         </Tab>
         <Tab closable="false" text="Tools">
             <fx:include source="tools.fxml"/>
         </Tab>
         <Tab fx:id="settingsTab" closable="false" text="Settings">
-
+            <fx:include source="settings.fxml"/>
         </Tab>
 
 

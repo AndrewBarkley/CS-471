@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.SubScene?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Region?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
@@ -52,10 +45,24 @@
             <fx:include source="chat_teacher.fxml"/>
         </Tab>
         <Tab fx:id="calTab" closable="false" onSelectionChanged="#tabEvents" text="Calendar">
-            <fx:include source="calendar.fxml"/>
+            <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                        AnchorPane.topAnchor="0.0" maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0"
+                        minWidth="0.0"
+                        prefHeight="180.0"
+                        prefWidth="200.0">
+                <WebView fx:id="gCalWV" prefHeight="342.0" prefWidth="600.0"
+                         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                         AnchorPane.topAnchor="0.0"/>
+            </AnchorPane>
         </Tab>
         <Tab fx:id="storageTab" closable="false" onSelectionChanged="#tabEvents" text="Storage">
-            <fx:include source="storage.fxml"/>
+            <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                        AnchorPane.topAnchor="0.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                        prefWidth="200.0">
+                <WebView fx:id="driveWView" layoutX="151.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0"
+                         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                         AnchorPane.topAnchor="0.0"/>
+            </AnchorPane>
         </Tab>
         <Tab closable="false" text="Tools">
             <fx:include source="tools.fxml"/>
@@ -63,7 +70,5 @@
         <Tab fx:id="settingsTab" closable="false" text="Settings">
             <fx:include source="settings.fxml"/>
         </Tab>
-
-
     </TabPane>
 </AnchorPane>
