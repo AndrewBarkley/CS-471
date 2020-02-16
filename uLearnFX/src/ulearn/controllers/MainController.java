@@ -10,12 +10,14 @@ import javafx.scene.web.WebView;
 public class MainController {
 	// main tabs
 	public TabPane mainTabs;
-	public Tab chatTab = new Tab(), classTab = new Tab(), calTab = new Tab(), storageTab = new Tab(), settingsTab =
+	public Tab chatTabStudent = new Tab(), classStudentTab = new Tab(), calTab = new Tab(), storageTab = new Tab(), settingsTab =
 			new Tab();
 
 	// calendar
 	public WebView gCalWV = new WebView();
 	public WebView driveWView = new WebView();
+    public Tab classTeacherTab;
+	public Tab chatTabTeacher;
 
 	@FXML void tabEvents(Event ev) {
 		if (calTab.isSelected()) {

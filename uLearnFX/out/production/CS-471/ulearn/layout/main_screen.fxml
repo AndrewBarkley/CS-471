@@ -1,132 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.SubScene?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.MainController">
-    <MenuBar layoutY="2.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="25.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.MainController">
+    <MenuBar layoutY="2.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="25.0" prefWidth="600.0"
+             AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+             AnchorPane.topAnchor="0.0">
         <Menu mnemonicParsing="false" text="Menu">
-            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Close"/>
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
-            <MenuItem mnemonicParsing="false" text="About uLearn" />
+            <MenuItem mnemonicParsing="false" text="About uLearn"/>
         </Menu>
     </MenuBar>
-    <TabPane fx:id="mainTabs" layoutY="27.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="370.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
-        <Tab text="uLearn Home">
-            <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0"
-                    prefWidth="200.0">
-                <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back!">
-                    <font>
-                        <Font name="Lato Regular" size="24.0"/>
-                    </font>
-                </Text>
-            </AnchorPane>
+    <TabPane fx:id="mainTabs" layoutY="27.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="370.0"
+             prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+             AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+        <Tab closable="false" text="uLearn Home">
+            <fx:include source="home.fxml"/>
         </Tab>
-        <Tab fx:id="classTab" text="Classes">
-            <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                <Accordion layoutX="14.0" layoutY="14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <panes>
-                        <TitledPane animated="false" text="Class One">
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                <ScrollPane prefHeight="240.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-                                </ScrollPane>
-                            </AnchorPane>
-                        </TitledPane>
-                        <TitledPane animated="false" text="Class Two">
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                <ScrollPane prefHeight="240.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-                                </ScrollPane>
-                            </AnchorPane>
-                        </TitledPane>
-                        <TitledPane animated="false" text="Class Three">
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                <ScrollPane prefHeight="240.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-                                </ScrollPane>
-                            </AnchorPane>
-                        </TitledPane>
-                        <TitledPane animated="false" text="Class Four">
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                <ScrollPane prefHeight="240.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-                                </ScrollPane>
-                            </AnchorPane>
-                        </TitledPane>
-                    </panes>
-                </Accordion>
-            </AnchorPane>
+        <Tab fx:id="classStudentTab" closable="false" text="Classes (Student)">
+            <fx:include source="class_student.fxml"/>
         </Tab>
-        <Tab text="Grades &amp; Attendance">
-            <AnchorPane>
-                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Grades &amp; Attendance" AnchorPane.topAnchor="0.0">
-                    <font>
-                        <Font size="24.0"/>
-                    </font>
-                </Text>
-            </AnchorPane>
+        <Tab fx:id="classTeacherTab" closable="false" text="Classes (Teacher)">
+            <fx:include source="class_teacher.fxml"/>
         </Tab>
-        <Tab fx:id="chatTab" text="Chat">
-            <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0"
-                    prefWidth="200.0">
-                <TabPane prefHeight="200.0" prefWidth="200.0" side="BOTTOM" snapToPixel="false" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-                        AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <Tab text="Home">
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
-                    </Tab>
-                    <Tab text="Untitled Tab 2">
-                        <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
-                        </content>
-                    </Tab>
-                </TabPane>
-            </AnchorPane>
+        <Tab closable="false" text="Grades &amp; Attendance (Student)">
+            <fx:include source="grades_student.fxml"/>
         </Tab>
-        <Tab fx:id="calTab" onSelectionChanged="#tabEvents" text="Calendar">
-            <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                <WebView fx:id="gCalWV" maxHeight="Infinity" maxWidth="Infinity" prefHeight="342.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-            </AnchorPane>
+        <Tab closable="false" text="Grades &amp; Attendance (Teacher)">
+            <fx:include source="grades_teacher.fxml"/>
         </Tab>
-        <Tab fx:id="storageTab" onSelectionChanged="#tabEvents" text="Storage">
-            <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                <WebView fx:id="driveWView" layoutX="151.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-            </AnchorPane>
+        <Tab fx:id="chatTabStudent" closable="false" text="Chat (Student)">
+            <fx:include source="chat_student.fxml"/>
         </Tab>
-        <Tab text="Tools">
-            <AnchorPane />
+        <Tab fx:id="chatTabTeacher" closable="false" text="Chat (Educator)">
+            <fx:include source="chat_teacher.fxml"/>
         </Tab>
-        <Tab fx:id="settingsTab" text="Settings">
-            <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                <VBox layoutX="7.0" layoutY="7.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="80.0" prefWidth="600.0" AnchorPane.bottomAnchor="261.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <MenuButton mnemonicParsing="false" prefWidth="140.0" text="I am a(n)...">
-                        <items>
-                            <MenuItem mnemonicParsing="false" text="Elementary Student" />
-                            <MenuItem mnemonicParsing="false" text="Middle School Student" />
-                            <MenuItem mnemonicParsing="false" text="High School Student" />
-                            <MenuItem mnemonicParsing="false" text="Educator" />
-                            <MenuItem mnemonicParsing="false" text="Educational Administrator" />
-                        </items>
-                        <VBox.margin>
-                            <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
-                        </VBox.margin>
-                    </MenuButton>
-                </VBox>
-            </AnchorPane>
+        <Tab fx:id="calTab" closable="false" onSelectionChanged="#tabEvents" text="Calendar">
+            <fx:include source="calendar.fxml"/>
+        </Tab>
+        <Tab fx:id="storageTab" closable="false" onSelectionChanged="#tabEvents" text="Storage">
+            <fx:include source="storage.fxml"/>
+        </Tab>
+        <Tab closable="false" text="Tools">
+            <fx:include source="tools.fxml"/>
+        </Tab>
+        <Tab fx:id="settingsTab" closable="false" text="Settings">
+
         </Tab>
 
 
