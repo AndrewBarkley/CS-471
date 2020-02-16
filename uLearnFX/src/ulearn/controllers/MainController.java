@@ -11,15 +11,14 @@ public class MainController {
     // main tabs
     public TabPane mainTabs;
     public Tab chatTabStudent = new Tab(), classStudentTab = new Tab(), calTab = new Tab(), storageTab = new Tab(),
-            settingsTab = new Tab();
+            settingsTab = new Tab(), classTeacherTab = new Tab(), chatTabTeacher = new Tab();
 
-    // calendar
-    public WebView gCalWV = new WebView();
-    public WebView driveWView = new WebView();
-    public Tab classTeacherTab;
-    public Tab chatTabTeacher;
+
+    // google stuff
+    public WebView wvGCal = new WebView(), wvDrive = new WebView();
 
     @FXML void tabEvents(Event ev) {
+        ev.consume();
         if (calTab.isSelected()) {
             gCalendar();
         } else if (storageTab.isSelected()) {
@@ -28,16 +27,16 @@ public class MainController {
     }
 
     void gCalendar() {
-        WebEngine wEngine = gCalWV.getEngine();
+        WebEngine wEngine = wvGCal.getEngine();
         wEngine.load("https://calendar.google.com");
-        gCalWV.setZoom(0.8);
+        wvGCal.setZoom(0.8);
 
     }
 
     void gDrive() {
-        WebEngine we = driveWView.getEngine();
+        WebEngine we = wvDrive.getEngine();
         we.load("https://drive.google.com/drive");
-        driveWView.setZoom(0.8);
+        wvDrive.setZoom(0.8);
     }
 
 }
