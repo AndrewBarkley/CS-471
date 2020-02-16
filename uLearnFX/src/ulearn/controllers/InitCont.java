@@ -15,7 +15,7 @@ import java.io.IOException;
 
 import static javafx.fxml.FXMLLoader.load;
 
-public class Init {
+public class InitCont {
 	// for login
 	public Button loginBtn = new Button();
 	public Label unameLabel = new Label(), pwdLabel = new Label();

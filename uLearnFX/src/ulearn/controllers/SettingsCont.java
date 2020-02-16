@@ -1,3 +1,3 @@
 package ulearn.controllers;
 
-public class ChatStudent {}
+public class SettingsCont {}

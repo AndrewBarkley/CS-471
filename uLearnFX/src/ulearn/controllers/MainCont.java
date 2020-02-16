@@ -7,7 +7,7 @@ import javafx.scene.control.TabPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
-public class MainController {
+public class MainCont {
     // main tabs
     public TabPane mainTabs;
     public Tab chatTabStudent = new Tab(), classStudentTab = new Tab(), calTab = new Tab(), storageTab = new Tab(),

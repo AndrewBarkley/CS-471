@@ -1,3 +1,3 @@
 package ulearn.controllers;
 
-public class ChatTeacher {}
+public class ToolCont {}
