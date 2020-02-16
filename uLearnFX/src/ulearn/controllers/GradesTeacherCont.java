@@ -30,7 +30,6 @@ public class GradesTeacherCont {
     }
 
     void setupOnClick(Parent par, Button btn, int width, int height, boolean resize) throws IOException {
-
         Stage stage = (Stage) btn.getScene().getWindow();
         Scene scene = new Scene(par, width, height);
         stage.setScene(scene);
